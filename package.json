@@ -1,0 +1,23 @@
+{
+  "name": "hsk-studio-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for HSK Studio: HSK vocabulary, graded Chinese readings and level checks. No API key needed.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "hsk-studio-mcp": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/aeither/hsk-studio-mcp.git" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -38,10 +38,19 @@ HSK Studio, where they tap any word for pinyin, meaning and audio.
 The same data is available over plain HTTP. `GET https://hsk.fulinlabs.com/api/agent`
 returns an index of the endpoints.
 
-## About this repository
+## Run it yourself
 
-This repository holds the listing metadata and documentation for the hosted
-server. The server itself runs inside HSK Studio at https://hsk.fulinlabs.com.
+The repository also holds a small stdio server that forwards the six tools to the
+hosted API. It needs Node 22 or newer.
+
+```bash
+npm ci && npm run build
+node dist/index.js
+```
+
+Set `HSK_STUDIO_API_URL` to point it at another API base. A `Dockerfile` is included.
+
+The product itself runs at https://hsk.fulinlabs.com.
 
 ## License
 
