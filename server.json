@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aeither/hsk-studio",
+  "description": "Read-only HSK vocabulary, graded Chinese readings and level checks for any Chinese text. No key needed.",
+  "repository": {
+    "url": "https://github.com/aeither/hsk-studio-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://hsk.fulinlabs.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hsk.fulinlabs.com/api/agent/mcp"
+    }
+  ]
+}
